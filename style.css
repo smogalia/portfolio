@@ -1,0 +1,204 @@
+body{
+    --color-accent: #dc3546c5;
+    --color-accent-hover: #911f2bb5;
+    --gray-color: #2e3135;
+    --grey-color: #8b8b8b;
+}
+
+.text-danger{
+    color: var(--color-accent) !important;
+}
+.btn-danger{
+    background-color: var(--color-accent) ;
+    border-color: var(--color-accent) ;
+}
+.btn-danger:hover{
+    background-color: white !important;
+    color: var(--color-accent) !important;
+    border-color: var(--color-accent-hover) !important;
+}
+.btn-outline-danger{
+    color: var(--color-accent) ;
+    border-color: var(--color-accent) ;
+}
+.btn-outline-danger:hover{
+    color: white !important;
+    border-color: var(--color-accent-hover) !important;
+}
+
+.main-content-website section:nth-child(2n){
+    background-color: var(--gray-color);
+}
+
+a{
+    color: initial;
+}
+
+#firstRowHomePage{
+    min-height: 100vh;
+    background-position: right;
+    background-image: url("../images/lego_office.jpg");
+}
+
+#text-presentation{
+    background-color: #000000be;
+    margin-top: -80px;
+}
+
+.description{
+    max-width: 550px;
+    margin: 15px auto;
+    font-size: 16px;
+}
+
+.text-bienvenue{
+    font-size: 22px;
+}
+
+.big-text{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#mouseBtn i{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 30px;
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 0.5s;
+}
+
+
+#mouseBtn i:hover{
+    font-size: 50px;
+    bottom: 30px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    cursor: pointer;
+}
+
+.btn-social-share{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.all-competences .card-img-top{
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+
+a.nav-link.active{
+    color: var(--color-accent) !important;
+    font-weight: bold;
+}
+
+#navbar-portfolio{
+    transition: 1.5s;
+    z-index: 1000;
+}
+
+.temoignage-text{
+    color: var(--grey-color);
+}
+
+.auteur-temoignage{
+    font-weight: bold;
+}
+
+.testimonial-icon{
+    color: var(--color-accent);
+    padding: 30px;
+    font-size: 55px;
+}
+
+#temoignages{
+    padding-bottom: 100px !important;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: var(--color-accent);
+}
+
+#scroll-top-button{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--color-accent);
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+#scroll-top-button.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+#color-setter{
+    position:fixed;
+    top:15%;
+    z-index: 1200;
+    display: flex;
+    left: -100px;
+    transition: all 0.5s;
+}
+
+#color-setter .color-pickers{
+    width: 100px;
+    padding: 15px;
+    background-color:#181818;
+    border-radius: 15px;
+}
+
+#color-setter .color-button{
+    padding: 5px;
+}
+
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#color-setter .color-button i{
+    display: block;
+   animation-name: rotation;
+   animation-duration: 5s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+#realisations img{
+    max-width: 100%;
+}
+
+#realisations a{
+    color: white;
+    text-decoration: none;
+}
+
+#realisations a:hover{
+    text-decoration: underline;
+}
+
+.contact-container .contact-header i{
+    font-size: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact-header h3{
+    font-weight: 300;
+    font-size:20px;
+}
+
+.contact-container .contact-body,
+.contact-container .contact-body a{
+    text-decoration: none;
+}
