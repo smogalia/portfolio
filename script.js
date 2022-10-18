@@ -50,3 +50,14 @@ function ShowPanelColor(){
     }
     
 }
+
+
+var map = L.map('map').setView([-21.34, 55.47], 12);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([-21.34, 55.47]).addTo(map)
+    .bindPopup('Je suis ici.<br> ...enfin je crois')
+    .openPopup();
